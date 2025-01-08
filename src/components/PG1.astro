@@ -27,7 +27,7 @@ import Contador from "./Contador.astro";
     </section>
     <section id="sec-izq">
       <div>
-        <img src="/src/assets/MGCLKN.png" alt="KENTIA - MODELO" />
+        <img src="https://postimg.cc/tsC2fJ3w" alt="KENTIA - MODELO" />
       </div>
     </section>
   </main>
@@ -98,6 +98,33 @@ import Contador from "./Contador.astro";
       img {
         width: 30rem;
         height: 30rem;
+        object-fit: cover;
+        position: static;
+        filter: dr op-shadow(0 0 13px rgba(0, 0, 0, 0.5));
+      }
+
+      #sec-der {
+        align-self: center;
+        display: contents;
+        height: inherit;
+        width: -webkit-fill-available;
+        text-align: center;
+      }
+      #sec-izq {
+        position: fixed;
+        display: grid;
+        top: 45%;
+      }
+      #sec-der-div {
+        padding-left: 0px;
+      }
+      main {
+      }
+    }
+    @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
+      img {
+        width: 32rem;
+        height: 32rem;
         object-fit: cover;
         position: static;
         filter: dr op-shadow(0 0 13px rgba(0, 0, 0, 0.5));
