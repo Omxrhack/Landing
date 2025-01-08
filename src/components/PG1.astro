@@ -7,10 +7,10 @@ import Contador from "./Contador.astro";
     <section id="sec-der">
       <div id="sec-der-div">
         <div>
-          <h1>CATWAY</h1>
+          <h1>CATWALK</h1>
         </div>
         <div>
-          <p>𝑅𝑢𝑛𝑤𝑎𝑦 𝐶𝑜𝑎𝑐ℎ 𝑏𝑦 𝐾𝑒𝑛𝑡𝑖𝑎 𝐵𝑜𝑗𝑜𝑟𝑞𝑢𝑒𝑧.</p>
+          <p>𝑅𝑢𝑛𝑤𝑎𝑦 𝐶𝑜𝑎𝑐ℎ 𝑏𝑦 <b>𝐾𝑒𝑛𝑡𝑖𝑎 𝐵𝑜𝑗𝑜𝑟𝑞𝑢𝑒𝑧</b>.</p>
         </div>
         <div id="slot-contador">
           <p><Contador /></p>
@@ -19,19 +19,16 @@ import Contador from "./Contador.astro";
           <p style="margin-bottom: 30px;">
             No te quedes afuera, es de cupo limitado.
           </p>
-          <a
-            target="_blank"
-            href="https://www.google.com/maps/place/Salvador+Alvarado,+Guam%C3%BAchil,+Sin./@25.460169,-108.077417,16z/data=!4m6!3m5!1s0x86bb87deb4e5ab87:0xfbde64aaf42e02bc!8m2!3d25.4601688!4d-108.0774172!16s%2Fg%2F1tddsmsf?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
-          >
+          <a target="_blank" href="https://maps.app.goo.gl/1H2N1JFgPnx5njav9">
             Ubicacion
           </a>
         </div>
       </div>
-      <section id="sec-izq">
-        <div>
-          <img src="/src/assets/MGCLKN.png" alt="KENTIA - MODELO" />
-        </div>
-      </section>
+    </section>
+    <section id="sec-izq">
+      <div>
+        <img src="/src/assets/MGCLKN.png" alt="KENTIA - MODELO" />
+      </div>
     </section>
   </main>
 
@@ -96,6 +93,33 @@ import Contador from "./Contador.astro";
       align-items: start;
       flex-direction: column;
       justify-content: center;
+    }
+    @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+      img {
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        position: static;
+        filter: dr op-shadow(0 0 13px rgba(0, 0, 0, 0.5));
+      }
+
+      #sec-der {
+        align-self: center;
+        display: contents;
+        height: inherit;
+        width: -webkit-fill-available;
+        text-align: center;
+      }
+      #sec-izq {
+        position: fixed;
+        display: grid;
+        top: 45%;
+      }
+      #sec-der-div {
+        padding-left: 0px;
+      }
+      main {
+      }
     }
   </style>
 </div>
