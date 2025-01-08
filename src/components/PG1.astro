@@ -10,68 +10,92 @@ import Contador from "./Contador.astro";
           <h1>CATWAY</h1>
         </div>
         <div>
-          <p>𝑅𝑢𝑛𝑤𝑎𝑦 𝐶𝑜𝑎𝑐ℎ 𝑏𝑦 𝐾𝑒𝑛𝑡𝑖𝑎 𝐵𝑜𝑗𝑜𝑟𝑞𝑢𝑒𝑧</p>
+          <p>𝑅𝑢𝑛𝑤𝑎𝑦 𝐶𝑜𝑎𝑐ℎ 𝑏𝑦 𝐾𝑒𝑛𝑡𝑖𝑎 𝐵𝑜𝑗𝑜𝑟𝑞𝑢𝑒𝑧.</p>
         </div>
         <div id="slot-contador">
           <p><Contador /></p>
         </div>
+        <div>
+          <p style="margin-bottom: 30px;">
+            No te quedes afuera, es de cupo limitado.
+          </p>
+          <a
+            target="_blank"
+            href="https://www.google.com/maps/place/Salvador+Alvarado,+Guam%C3%BAchil,+Sin./@25.460169,-108.077417,16z/data=!4m6!3m5!1s0x86bb87deb4e5ab87:0xfbde64aaf42e02bc!8m2!3d25.4601688!4d-108.0774172!16s%2Fg%2F1tddsmsf?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D"
+          >
+            Ubicacion
+          </a>
+        </div>
       </div>
-    </section>
-    <section id="sec-izq">
-      <div>
-        <img src="/src/assets/MGCLKN.png" alt="KENTIA - MODELO" />
-      </div>
+      <section id="sec-izq">
+        <div>
+          <img src="/src/assets/MGCLKN.png" alt="KENTIA - MODELO" />
+        </div>
+      </section>
     </section>
   </main>
+
+  <style>
+    #container {
+      height: 100%;
+    }
+    h1 {
+      margin: 0px;
+      font-weight: 900;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-size: 50px;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 800;
+      font-family: "Courier New", Courier, monospace;
+      border: 3px solid black;
+      padding: 5px;
+      background: black;
+      color: white;
+    }
+    p {
+      margin: 0px;
+    }
+    img {
+      width: 45rem;
+      height: 50rem;
+      position: absolute;
+      top: 0%;
+      left: 45%;
+      object-fit: cover;
+      display: grid;
+      filter: drop-shadow(0 0 13px rgba(0, 0, 0, 0.5));
+    }
+    main {
+      height: 100%;
+      display: flex;
+      gap: 7rem;
+      justify-content: center;
+    }
+    #slot-contador {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    #sec-der {
+      align-self: center;
+      height: inherit;
+      width: -webkit-fill-available;
+      align-content: center;
+      justify-content: left;
+      left: 10%;
+    }
+    #sec-der-div {
+      padding-left: 13rem;
+    }
+
+    #sec-izq {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
 </div>
-
-<style>
-  #container {
-    height: 100%;
-  }
-  h1 {
-    margin: 0px;
-  }
-  p {
-    margin: 0px;
-  }
-  img {
-    width: 45rem;
-    height: 50rem;
-    position: absolute;
-    top: 0%;
-    left: 45%;
-    object-fit: cover;
-    display: grid;
-    filter: drop-shadow(0 0 13px rgba(0, 0, 0, 0.5));
-  }
-  main {
-    height: 100%;
-    display: flex;
-    gap: 7rem;
-    justify-content: center;
-  }
-  #slot-contador {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
-  #sec-der {
-    align-self: center;
-    height: inherit;
-    width: -webkit-fill-available;
-    align-content: center;
-    justify-content: left;
-    left: 10%;
-  }
-  #sec-der-div {
-    padding-left: 13rem;
-  }
-
-  #sec-izq {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: center;
-  }
-</style>
